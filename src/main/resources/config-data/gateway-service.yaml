@@ -31,12 +31,12 @@ spring:
         - id: acopio-service
           uri: lb://acopio-service
           predicates:
-            - Path=/acopio-service/**
+            - Path=/acopio/**
         - id: valores-service
           uri: lb://valores-service
           predicates:
-            - Path=/valores-service/**
+            - Path=/valores/**
         - id: planilla-service
           uri: lb://planilla-service
           predicates:
-            - Path=/planilla-service/**
+            - Path=/planilla/**
