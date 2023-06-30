@@ -27,7 +27,7 @@ spring:
         - id: proveedor-service
           uri: lb://proveedor-service
           predicates:
-            - Path=/proveedor-service/**
+            - Path=/proveedor/**
         - id: acopio-service
           uri: lb://acopio-service
           predicates:
