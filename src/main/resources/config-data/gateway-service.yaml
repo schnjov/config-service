@@ -25,7 +25,7 @@ spring:
             allow-credentials: true
       routes:
         - id: proveedor-service
-          uri: localhost:8085
+          uri: lb://proveedor-service
           predicates:
             - Path=/proveedor-service/**
         - id: acopio-service
