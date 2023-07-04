@@ -10,3 +10,8 @@ spring:
           search-paths: src/main/resources/config-data
   application:
     name: config-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
